@@ -1,11 +1,11 @@
 CC=gcc
 CFLAGS = -Wall -I.
-LIBS = -lsystemd-journal
+LIBS = -lsystemd-journal -livykis
+
 PROG = jtail jdump
 
 all: $(PROG)
 
-# gcc journal-tail.c  -Wall -lsystemd-journal -o tail
 jtail: jtail.c
 	$(CC) -o jtail jtail.c $(CFLAGS) $(LIBS)
 
