@@ -12,4 +12,15 @@ print_fields(sd_journal *j)
     }
 }
 
+int
+print_err(char* errmsg, int errcode)
+{
+	if (errcode < 0)
+	{
+        fprintf(stderr, errmsg, strerror(-errcode));
+        return 1;
+    }
+	return 0;
+}
+
 #endif
