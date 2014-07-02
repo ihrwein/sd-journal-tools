@@ -9,3 +9,4 @@ You can generate log messages with the logger command.
 Tested on RHEL 7.0:
  * gcc
  * systemd-devel
+ * ivykis
